@@ -5,5 +5,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
 }
 
+.main p {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+
+.main .icon {
+  width: 12rem;
+  height: 12rem;
+  font-weight: 400;
+  color: var(--icon-grey);
+}
+
+.main .search {
+  font-size: 1.5rem;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  background-color: var(--icon-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
