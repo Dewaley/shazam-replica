@@ -13,11 +13,22 @@
   margin-top: 2rem;
 }
 
+.main .shazamContainer {
+  width: 11rem;
+  height: 11rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
 .main .icon {
   width: 12rem;
   height: 12rem;
   font-weight: 400;
   color: var(--icon-grey);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .main .search {
