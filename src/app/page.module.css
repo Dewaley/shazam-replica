@@ -18,6 +18,8 @@
   height: 11rem;
   background-color: white;
   border-radius: 50%;
+  animation: normal 4s infinite;
+  position: relative;
 }
 
 .main .icon {
@@ -28,7 +30,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  /* display: none; */
 }
 
 .main .search {
@@ -41,4 +44,16 @@
   align-items: center;
   border-radius: 50%;
   margin-bottom: 2rem;
+}
+
+@keyframes normal {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
 }
