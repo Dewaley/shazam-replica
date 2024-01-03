@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <p>Tap to Shazam</p>
-      <SiShazam className={styles.icon} />
+      <div className={styles.shazamContainer}><SiShazam className={styles.icon} /></div>
       <span className={styles.search}><IoSearch/></span>
     </main>
   )

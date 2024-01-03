@@ -1,6 +1,7 @@
 :root {
-  --text-white: #FFFFFF;
+  --text-white: #ffffff;
   --background-darkblue: #020914;
+  --icon-grey: #4d565a;
 }
 
 * {
@@ -9,18 +10,52 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
 }
 
 body {
+  min-height: 100vh;
   color: var(--text-white);
   background-color: var(--background-darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.alternative {
+  display: none;
+}
+
+@media all and (min-width: 640px) {
+  .alternative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .alternative img {
+    width: 50vw;
+    object-fit: contain;
+    min-width: 400px;
+  }
+
+  .children-container {
+    display: none;
+  }
 }
